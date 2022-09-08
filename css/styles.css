@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Trispace:wght@400;600;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trispace', sans-serif;
+    box-sizing: border-box;
+
+    --txt-color: rgb(255, 248, 240);
+    --txt-shadow : #70A0AF;
+    --bcg-color : #022B3A;
+}
+
+.container {
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.parallax {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+.background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    transform: translateZ(-1px) scale(2);
+}
+
+.bg-1 {
+    background:url("https://t3.ftcdn.net/jpg/04/28/15/48/240_F_428154809_mtmoYn9hioSdKrwO1OYq61wiLHploz3Q.jpg") center / cover;
+}
+.bg-2 {
+    background: url("https://images.pexels.com/photos/7614217/pexels-photo-7614217.jpeg?auto=compress&cs=tinysrgb&w=600") center / cover
+}
+.bg-3 {
+    background: url("../img/space-planet-mars-crater-wallpaper-preview\ \(1\).jpg") center / cover;
+}
+
+.normal {
+    width: 100%;
+    height: 100vh;
+    background: #01080A;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.parallax:nth-child(1) h1 {
+    text-align: left;
+}
+h1{
+    margin: 0 auto;
+    width: 90%;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing:-2px;
+    color: rgb(255, 248, 240);
+    text-shadow: 0 5px 15px #70161E;
+    word-spacing: 100vw;
+    text-transform: uppercase;
+}
+
+h3{
+    margin: 0 auto;
+    /* width: 90%; */
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing:-2px;
+    color: rgb(255, 248, 240);
+    text-shadow: 0 0px 20px #70161E;
+    
+}
